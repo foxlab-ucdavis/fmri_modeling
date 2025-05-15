@@ -17,7 +17,7 @@ BASE_DIR="/share/foxlab-backedup/kaline_fconn"
 CHUNK_DIR="${BASE_DIR}/data/external/timeseries_hires_allfiles/chunk_${SLURM_ARRAY_TASK_ID}"
 MASK_DIR="${BASE_DIR}/anterior_insula_fconn/masks"
 SCRIPT_DIR="${BASE_DIR}/modeling_scripts"
-SCRIPT_NAME="first_level_analysis_maskdir.py"  # change if needed
+SCRIPT_NAME="first_level_modeling.py"  # change if needed
 
 # === EXECUTION ===
 cd "$SCRIPT_DIR" || { echo "Failed to cd into $SCRIPT_DIR"; exit 1; }
