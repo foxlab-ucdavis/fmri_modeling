@@ -50,7 +50,7 @@ def pipeline(
     mask_dir: Path = typer.Argument(..., help="Directory of .nii mask files."),
     data_dir: Path = typer.Argument(..., help="Directory with BOLD .nii.gz files.")
 ):
-    for mask_file in mask_dir.glob("*.nii"):
+    for mask_file in mask_dir.glob("*.nii*"):
         mask_img = nib.load(str(mask_file))
         mask_tag = mask_file.stem
 
