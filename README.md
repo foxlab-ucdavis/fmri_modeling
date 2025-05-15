@@ -2,7 +2,7 @@
 
 ## First and Second Level fMRI Models for Resting-State Functional Connectivity
 
-This repository contains example Python scripts and SLURM job submission files for performing first- and second-level fMRI analyses. The modeling is designed for resting-state functional connectivity analysis and is intended to be used on a high-performance computing (HPC) cluster.
+This repository contains example Python scripts and SLURM job submission files for performing first- and second-level fMRI analyses. The modeling is designed for resting-state functional connectivity analysis and is intended to be used on a high-performance computing cluster.
 
 ---
 
