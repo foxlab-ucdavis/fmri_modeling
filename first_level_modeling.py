@@ -52,7 +52,7 @@ def pipeline(
 ):
     for mask_file in mask_dir.glob("*.nii*"):
         mask_img = nib.load(str(mask_file))
-        mask_tag = mask_file.stem
+        mask_tag = mask_file.name.replace('.nii.gz', '').replace('.nii', '')
 
         base_dir = mask_file.parent.parent
         timeseries_dir = base_dir / "timeseries_output"
