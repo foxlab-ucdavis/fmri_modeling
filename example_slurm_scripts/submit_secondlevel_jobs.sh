@@ -24,4 +24,4 @@ cd "$SCRIPT_DIR" || { echo "Failed to cd into $SCRIPT_DIR"; exit 1; }
 echo "Running second-level model with data from: $DATA_DIR"
 echo "Executing: python $SCRIPT_NAME pipeline $OUTPUT_TAG $DATA_DIR"
 
-python "$SCRIPT_NAME" pipeline "$OUTPUT_TAG" "$DATA_DIR"
+python "$SCRIPT_NAME" "$OUTPUT_TAG" "$DATA_DIR"
